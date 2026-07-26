@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/img/8.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+</head>
+
+<body>
+
+   <main>
+    <section class="login">
+        <div class="img"></div>
+
+        <div class="form">
+            <h1 style="text-align: center;">Login</h1>
+            <p>Seja bem-vindo(a). Faça Login para se cadastrar a lista de espera para o lançamento do GTA VI</p>
+
+            <form action="php/login.php" method="post">
+
+                <div class="info">
+                    <label for="Name"><img class="img1" src="assets/user.png"></label>
+                    <input type="text" name="nome" id="Name" placeholder="Digite o seu nome">
+                </div>
+
+                <div class="info">
+                    <label for="Email"><img class="img1" src="assets/email.png"></label>
+                    <input type="email" name="email" id="Email" placeholder="Exemplo@gmail.com">
+                </div>
+
+                <div class="info">
+                    <label for="Senha"><img class="img1" src="assets/password.png"></label>
+                    <input minlength="8" maxlength="80" type="password" name="senha" id="Senha" placeholder="Digite a sua senha">
+                </div>
+
+                <input type="submit" value="login">
+
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>
