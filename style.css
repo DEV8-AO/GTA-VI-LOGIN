@@ -39,7 +39,7 @@ a {
 
 main {
     position: relative;
-    height: 94dvh;
+    height: 100dvh;
     background: url(assets/img/320px.jpg) no-repeat;
     background-size: cover;
 }
@@ -56,7 +56,7 @@ main {
     background-color: beige;
     overflow: hidden;
     border-radius: 20px;
-    height: 460px;
+    height: 480px;
     width: 270px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.596);
 }
@@ -108,6 +108,7 @@ main {
     border: none;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.144);
     transition-duration: 0.5s;
+
 }
 
 .sub:hover {
@@ -116,9 +117,9 @@ main {
     cursor: pointer;
 }
 
-a:hover{
-transform: scale(1.1);
-transition-duration: 0.5s;
+a:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 
 
@@ -133,4 +134,70 @@ transition-duration: 0.5s;
         background-size: cover;
     }
 
+}
+
+/*? styele do sobre.html*/
+
+.infoo {
+    margin: 20px;
+}
+
+.font {
+    margin-top: 10px;
+    background-color: rgba(165, 42, 42, 0.562);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.397);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: px;
+    transition-duration: 1s;
+
+}
+
+.font:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+footer {
+    font-size: 15px;
+    background-color: beige;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+@media (min-width:375px) {
+    footer {
+        font-size: 15px;
+        background-color: beige;
+        padding: 20px;
+        margin-top: 80px;
+    }
+}
+
+@media (min-width:1024px) {
+    footer {
+        font-size: 15px;
+        background-color: beige;
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .font {
+        width: 50%;
+    }
+
+    .infoo {
+        margin-left: 400px;
+        margin-top: 100px;
+    }
 }

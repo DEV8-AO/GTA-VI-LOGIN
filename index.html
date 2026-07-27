@@ -7,22 +7,26 @@
     <title>Login-8</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/img/8.png" type="image/x-icon" />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="animate__animated animate__fadeInDown">
         <a class="logo" style="color: brown; font-size: 20px;" href="#">DEV-8</a>
-        <a style="color: black;" href="about.html">Sobre</a>
+        <a style="color: black;" href="sobre.html">Sobre</a>
     </header>
 
     <main>
-        <section class="login">
-            <div class="img"></div>
+        <section class="login  ">
+            <div class="img animate__animated animate__fadeInUp animate__delay-0.5s"></div>
 
-            <div class="form">
+            <div class="form  animate__animated animate__fadeInUp animate__delay-0.8s" id="formLogin">
                 <h1 style="text-align: center">Login</h1>
 
                 <p style="text-align: center; padding-bottom: 10px;">
@@ -47,12 +51,15 @@
                         <input class="input" minlength="8" maxlength="8" type="password" name="senha" id="Senha"
                             placeholder="Digite a sua senha" />
                     </div>
-
-                    <input class="sub" type="submit" value="login" />
+                    <p id="mensagemErro" style="color: red; text-align: center; display: none;">
+        Por favor, preencha todos os campos!
+    </p>
+                      <button class="sub" type="submit">Login</button>
                 </form>
             </div>
         </section>
     </main>
+<script src="main.js"></script>
 </body>
 
 </html>
