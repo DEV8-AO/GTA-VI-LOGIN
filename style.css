@@ -21,8 +21,6 @@ a {
     transition-duration: 0.5s;
 }
 
-
-
 .logo {
     animation: alternate infinite 1s pulsar;
 }
@@ -89,7 +87,6 @@ main {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.199);
     transition-duration: 0.5s;
-
 }
 
 .input:hover {
@@ -101,14 +98,15 @@ main {
 }
 
 .sub {
-    width: 50%;
+    height: 20px;
+    width: 30%;
     position: relative;
-    left: 70px;
+    left: 95px;
     border-radius: 5px;
     border: none;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.144);
     transition-duration: 0.5s;
-
+    font-size: 16px;
 }
 
 .sub:hover {
@@ -131,6 +129,16 @@ a:hover {
         position: relative;
         height: 94dvh;
         background: url(assets/img/1920px.jpg) no-repeat;
+        background-size: cover;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    main {
+        position: relative;
+        height: 94.2dvh;
         background-size: cover;
     }
 
@@ -171,8 +179,7 @@ a:hover {
 footer {
     font-size: 15px;
     background-color: beige;
-    padding: 20px;
-    margin-top: 50px;
+    text-align: center;
 }
 
 @media (min-width:375px) {
@@ -196,8 +203,45 @@ footer {
         width: 50%;
     }
 
-    .infoo {
-        margin-left: 400px;
-        margin-top: 100px;
+}
+
+.img-1 {
+    position: relative;
+    height: 100dvh;
+    background: url(assets/img/gta-6-2026-official-poster-nx-480x800.jpg) no-repeat;
+    background-size: cover;
+}
+
+.img-2 {
+    background: url(assets/img/gta-6-2026-official-poster-nx-480x800.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: left;
+
+}
+
+.form-2 {
+    position: relative;
+    top: -30px;
+}
+
+@media(min-width:1024px) {
+    .img-1 {
+        position: relative;
+        height: 94.2dvh;
+        background: url(assets/img/1920x1080.jpg) no-repeat;
+        background-size: cover;
+        background-position: bottom;
     }
+
+    .font-2 {
+        position: relative;
+        left: 25%;
+    }
+
+}
+
+.bd {
+    background-color: beige;
+
 }
