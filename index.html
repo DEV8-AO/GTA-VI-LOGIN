@@ -21,6 +21,7 @@
     </header>
 
     <main>
+
         <section class="login  ">
             <div class="img animate__animated animate__fadeInUp animate__delay-0.5s"></div>
 
@@ -32,22 +33,24 @@
                     para o lançamento do GTA VI
                 </p>
 
-                <form action="php/login.php" method="post">
+                <form id="formLogin" action="php/login.php" method="post">
 
                     <div class="info">
                         <label for="Name"><img class="img1" src="assets/img/user.png" /></label>
-                        <input class="input" type="text" name="nome" id="Name" placeholder="Digite o seu nome" />
+                        <input class="input" required type="text" name="nome" id="Name"
+                            placeholder="Digite o seu nome" />
                     </div>
 
                     <div class="info">
                         <label for="Email"><img class="img1" src="assets/img/email.png" /></label>
-                        <input class="input" type="email" name="email" id="Email" placeholder="Exemplo@gmail.com" />
+                        <input class="input" required type="email" name="email" id="Email"
+                            placeholder="Exemplo@gmail.com" />
                     </div>
 
                     <div class="info">
                         <label for="Senha"><img class="img1" src="assets/img/senha.png" /></label>
-                        <input class="input" minlength="8" maxlength="8" type="password" name="senha" id="Senha"
-                            placeholder="Digite a sua senha" />
+                        <input class="input" minlength="8" maxlength="8" required type="password" name="senha"
+                            id="Senha" placeholder="Digite a sua senha" />
                     </div>
                     <p id="mensagemErro" style="color: red; text-align: center; display: none;">
                         Por favor, preencha todos os campos!
@@ -56,9 +59,9 @@
                 </form>
             </div>
         </section>
+
     </main>
 
-    <script src="main.js"></script>
 </body>
 
 </html>
